@@ -54,23 +54,24 @@ def number_to_short_month_name(month)
   end
 end
 
+#another way of doing it
+# def number_to_short_month_name(number)
+#   short_name = test_number_to_full_name(number).slice(0, 3)
+#   return short_name
+# end
+
 
 def volume_of_cube(x)
-  x = 10
-  volume = x ** 3
-  return volume
+  return x ** 3
 end
 
 
 def volume_of_sphere(y)
-  y = 12
-  volume = 4/3.0 * Math::PI * y ** 3
-  return volume
+  volume = (4/3) * Math::PI * (y ** 3)
+  return volume.round(4)
 end
 
 
-def fahrenheit_to_celsius(fahrenheit)
-  fahrenheit = 100
-  conversion = ((fahrenheit -32 ) * 5/9)
-  return conversion
+def fahrenheit_to_celsius(f)
+  return (f - 32) * (5/9)
 end
